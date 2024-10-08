@@ -1,2 +1,2 @@
-# clinic_website
+# Clinic Website
 WebSite for Clinic
