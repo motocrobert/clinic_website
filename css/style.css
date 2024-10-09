@@ -1,0 +1,79 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header with gradient from header to hero section */
+header {
+    background: linear-gradient(to bottom, #479fe7, #6eb5e1);
+    color: #ffffff;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Navigation styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(to bottom, #6eb5e1, #ffffff);
+    text-align: center;
+    padding: 100px;
+    color: white;
+}
+
+/* Main content styling */
+.main-content {
+    background-color: #ffffff; /* White/yellowish background */
+    padding: 50px;
+}
+
+/* Success Stories Section Styling */
+.success-stories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.story {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
